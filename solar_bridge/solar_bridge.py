@@ -1,0 +1,1 @@
+./DockerDir/solar_bridge.py

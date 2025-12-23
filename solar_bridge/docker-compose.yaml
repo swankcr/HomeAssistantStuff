@@ -1,0 +1,10 @@
+services:
+  solar-collector:
+    build: ./DockerDir  # Check if this path matches your folder structure
+    container_name: solar-collector
+    restart: unless-stopped
+    
+    # This tells Docker to load variables from the .env file
+    # and inject them into the container environment.
+    env_file:
+      - .env
